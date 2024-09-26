@@ -1,0 +1,282 @@
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: #1a1a1a; /* Darker background */
+  color: #e0e0e0; /* Lighter text color for better contrast */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom, #1c1c1c, #3a3a3a); /* Darker gradient */
+}
+
+.header {
+  background-color: #2b2b2b; /* Darker header */
+  padding: 5px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: 	#008080; /* Bright blue for the logo */
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #e0e0e0; /* Light text for links */
+  text-decoration: none;
+  padding: 0.5em;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: 	#008080; /* Change link color on hover */
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: 	#008080; /* Bright blue for titles */
+  font-size: 2.5em;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background-color: #3a3a3a; /* Input background */
+  color: #e0e0e0; /* Input text color */
+}
+
+.search-button {
+  padding: 10px;
+  background-color:	#008080; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.song-card {
+  background-color: #2b2b2b; /* Darker card background */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+}
+
+.song-title {
+  color: 	#008080; /* Bright blue for song titles */
+  font-size: 1.5em;
+}
+
+.play-button {
+  display: block;
+  text-align: center;
+  background-color:	#008080; /* Bright blue for play button */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.upload-form .form-group {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333; /* Keeping dark border */
+  background-color: #3a3a3a; /* Input background */
+  color: #e0e0e0; /* Input text color */
+}
+
+.submit-button {
+  width: 50%;
+  padding: 10px;
+  background-color: 	#008080; /* Bright blue for submit button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.now-playing-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the now-playing section */
+  width: 100%; /* Full width of the main content */
+}
+
+.now-playing {
+  text-align: center;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px; /* Limit the width of the player */
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.control-button {
+  background-color: 	#008080;
+  padding: 15px;
+  border-radius: 50%;
+  transition: transform 0.2s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.control-button:hover {
+  background-color: 	#008080;
+  transform: scale(1.1);
+}
+
+.control-button i {
+  font-size: 1.5em;
+  color: white;
+}
+
+.audio-player {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  outline: none;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+  padding: 10px;
+  color: 	#008080;
+}
+
+.audio-player::-webkit-media-controls-panel {
+  background-color: #2b2b2b; /* Style audio controls background */
+  border-radius: 10px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-form .form-group {
+  width: 100%; /* Ensure form groups take full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  width: 50%; /* Keeping 50% width for input */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+}
+
+.submit-button {
+  width: 50%; /* Keeping 50% width for button */
+  padding: 10px;
+  background-color:	#008080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #ff4c4c; /* Red background color for the delete button */
+  color: white; /* White text color */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Adds space between the button and other elements */
+  display: block; /* Ensures the button takes up full width if necessary */
+  text-align: center; /* Centers the button text */
+}
+
+.delete-button:hover {
+  background-color: #e60000; /* Darker red when hovered */
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.song-card {
+  background-color: #2b2b2b; /* Darker card background */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space between song details and delete button */
+}
+
+.song-details {
+  flex-grow: 1; /* Allow this section to grow */
+}
+
+.delete-button {
+  display: block; /* Ensures the button takes up the full width */
+  background-color: #ff4c4c; /* Red background color for the delete button */
+  color: white; /* White text color */
+  border: none;
+  padding: 10px; /* Same padding as play button */
+  border-radius: 5px; /* Same border-radius as play button */
+  cursor: pointer;
+  margin-top: 10px; /* Adds space above the button */
+  text-align: center; /* Centers the button text */
+  width: 100%; /* Makes the button full width */
+}
+
+.delete-button:hover {
+  background-color: #e60000; /* Darker red when hovered */
+}
